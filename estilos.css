@@ -1,0 +1,519 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 8px;
+    color: #464646;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content:right;
+    margin-bottom: 3vw;
+}
+
+.header div{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.1vw;
+    font-weight: 500;
+    color: #464646;
+}
+
+.logo{
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 0.1vw;
+    align-content: center;
+    justify-content: left;
+}
+
+.header h5{
+    font-style: Bold;
+    font-weight: 700;
+    font-size: 1.3vw;
+    align-content: center;
+}
+
+@media  (max-width: 600px) {
+    .info {
+      flex-wrap:wrap-reverse;
+    }
+}
+.info{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.info div{
+    display: block;
+    position: relative;
+    padding: 2% 0;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin-right: 1rem;
+}
+.info h3{
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.info h4{
+    font-weight: 400;
+    padding-top: 2vh;
+    font-size: 2vw;
+}
+
+.foto-perfil{
+    display: flex;
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+}
+
+.links {
+    padding-top: 2vh;
+    display: flex;
+}
+
+.links a{
+    padding-right: 2vw;
+}
+
+
+.sobre-mi{
+    background-size: 100%;
+    margin-top: 2vw;
+    background-color:#EAF2FD;
+    box-sizing: border-box;
+}
+
+.sobre-mi h4{
+    font-size: 2.2vw;
+    margin-bottom: 1vw;
+}
+
+.sobre-mi p{
+    width: 70%;
+    margin-bottom: 1vw;
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+.sobre-mi img{
+    width: 8vw;
+    height: 3vw;
+}
+
+.titulo-section{
+    display: block;
+    text-align: center;
+    font-size: 2.2vw;
+}
+
+.lista-cards div{
+    margin: 1vw;
+    align-items: end;
+    background-color: rgb(255, 255, 255);
+}
+.lista-cards h5{
+    position: absolute;
+    margin-left: 0.6vw;
+    align-content: end;
+}
+
+.lista-cards img{
+    margin-left: 0.6vw;
+}
+
+.card{
+    margin: 1vw;
+    width: 100%;
+    justify-content: center ;
+}
+.formacion{
+    background-color: #EAF2FD;
+}
+
+.formacion h5, .experiencia h5, .contacto h5{
+    font-size: 1.5vw;
+    margin-bottom: 0.3vw;
+}
+.formacion h6, .experiencia h6, .contacto h6{
+    font-size: 1.1vw;
+    font-weight: 500;
+    padding-bottom: 0.4vw;
+}
+
+.formacion img{
+    width: 12vw;
+}
+
+
+.div-imagen{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 0.4vw;
+}
+
+.experiencia h4{
+    display: flex;
+    justify-content: center;
+}
+.experiencia div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 1vw;
+}
+.experiencia img{
+    width: 50vw;
+    padding-right: 1vw;
+}
+.experiencia span{
+    margin-right: 16vw;
+}
+.boton{
+    padding: 1vw;
+    margin-right: 0.5vw;
+    font-weight: 400;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    background-color: #2A7AE4;
+    color: white;
+}   
+#button-cambiado{
+    padding: 1vw;
+    margin-right: 0.5vw;
+    font-weight: 400;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+}
+.contacto{
+    display: flex;
+    background-color: #EAF2FD;
+    justify-content: left;
+}
+.contacto h5{
+    display: flex;
+    justify-content: left;
+}
+.contacto img{
+    width: 26vw;
+    padding-right: 1vw;
+}
+.contacto form{
+    width: 100%;
+}
+.contacto form div{
+    margin-top: 1vw;
+}
+
+@media (min-width: 850px){
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        width: 40vw;
+        margin-left: auto;
+    }
+    .formacion, .sobre-mi, .header , .skills-hob{
+        padding: 2vw 7vw;
+    }
+    .info{
+        padding: 0 7vw;
+    }
+    .experiencia {
+        padding: 1vw 7vw;
+    }
+    .contacto{
+        padding: 6vw 9vw 3vw 8vw;
+    }
+    .lista-cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-cards div{
+        display: flex;
+        width: 13vw;
+        height: 13vw;
+    }
+    .lista-cards h5{
+        margin-bottom: 0.8vw;
+        font-size: 1.6vw;    }
+    
+    .lista-cards img{
+        margin-bottom: 3.2vw;
+        height: 2vw;
+    }
+
+    .lista-formacion{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .div-imagen{
+        width: 100%;
+        height: 16vw;
+    }
+}
+@media (max-width: 850px) and (min-width:500px){
+    .header{
+        justify-content: space-between;
+    }
+    .header h5{
+        font-size: 2.7vw;
+    }
+    .logo{
+        width: 3.3vw;
+        height: 3.3vw;
+    }
+    .menu a{
+        display: none;
+    }
+    .titulo-section{
+        font-size: 3vw;
+    }
+    .formacion, .sobre-mi, .header , .skills-hob{
+        padding: 1vw 2vw;
+    }
+    .info{
+        padding: 0 2vw;
+    }
+    .experiencia {
+        padding: 1vw 2vw;
+    }
+    .contacto{
+        padding: 3vw 4.5vw 1.5vw 4vw;
+    }
+    a{
+        font-size: 1.5vw;
+    }
+    .sobre-mi p{
+        width: 100%;
+        font-size: 1.5vw;
+    }
+    .sobre-mi img{
+        width: 11vw;
+        height: 3.7vw;
+    }
+    .lista-cards{
+        padding-right: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1vw;
+        column-gap: 2vw;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    .lista-cards div{
+        display: flex;
+        width: 100%;
+        height: 11vw;
+    }
+    .lista-cards h5 , .contacto h5, .experiencia h5{
+        margin-bottom: 0.8vw;
+        font-size: 1.6vw;    
+    }
+    .lista-cards h6 , .contacto h6, .experiencia h6{
+        font-size: 1.2vw;    
+    }
+    .lista-cards img{
+        margin-bottom: 4vw;
+        height: 2.5vw;
+    }
+
+    .lista-formacion{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .div-imagen{
+        width: 100%;
+        height: 15vw;
+
+    }
+    .experiencia div{
+        display: grid;
+        row-gap: 1vw;
+        grid-template-columns: 1fr;
+    }
+    .experiencia img{
+        grid-row-start: 1;
+        width: 90%;
+    }
+    .contacto img{
+        display: none;
+    }
+    .contacto div{
+        padding-top: 1vw;
+    }
+    .contacto div label{
+        font-size: 1.6vw;
+        left: 2vw;
+        top: 1.5vw;
+    }
+    #floating_filled{
+        height: 3vw;
+    }
+    #message{
+        height: 10vw;
+        font-size: 1.6vw;
+    }
+}
+
+@media (max-width: 500px){
+    .header{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 4vw;
+        height: 4vw;
+    }
+    .header h5{
+        font-size: 3vw;
+    }
+    .menu a{
+        display: none;
+    }
+    .titulo-section{
+        font-size: 3vw;
+    }
+    .formacion, .sobre-mi, .header {
+        padding: 2vw 2vw;
+    }
+    .experiencia, .info{
+        padding: 1vw 2vw;
+    }
+    .skills-hob{
+        padding: 1vw;
+    }
+    .experiencia div{
+        display: grid;
+        row-gap: 1vw;
+        grid-template-columns: 1fr;
+    }
+    .experiencia img{
+        grid-row-start: 1;
+        width: 90%;
+    }
+    .experiencia h5, .contacto h5{
+        font-size: 3vw;
+    }
+    .experiencia h6, .contacto h6{
+        font-size: 2.5vw;
+    }
+    .boton, #button-cambiado{
+        font-size: 2vw;
+    }
+    .contacto{
+        padding: 3vw 4.5vw 1.5vw 4vw;
+    }
+    a{
+        font-size: 1.5vw;
+    }
+    .sobre-mi p{
+        width: 100%;
+        font-size: 2vw;
+    }
+    .sobre-mi img{
+        width: 11vw;
+        height: 3.7vw;
+    }
+    .lista-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1vw;
+        column-gap: 1vw;
+        grid-template-rows: 1fr 1fr  1fr;
+    }
+
+    .lista-cards div{
+        display: flex;
+        width: 40vw;
+        padding-left: 1vw;
+        margin-left: 4vw;
+        height: 33vw;
+    }
+    .lista-cards h5{
+        margin-bottom: 0.8vw;
+        font-size: 3vw;    
+    }
+    
+    .lista-cards img{
+        margin-bottom: 6vw;
+        width: 6vw;
+    }
+    .lista-formacion{ 
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .formacion img{
+        width: 30vw;
+        height: 20vw;
+    }
+    .div-imagen { 
+        width: 60vw;
+        height: 28vw;
+    }
+    .contacto img{
+        display: none;
+    }
+    .contacto div{
+        padding-top: 1vw;
+    }
+    .contacto div label{
+        font-size: 2vw;
+        left: 2vw;
+        top: 1.5vw;
+    }
+    #floating_filled{
+        height: 0.5vw;
+        font-size: 2vw;
+
+    }
+    #floating_filled .text-sm{
+        font-size: 1vw;
+    }
+    #message{
+        height: 10vw;
+        font-size: 1.6vw;
+        padding-left: 2vw;
+        padding-top: 0.5vw;
+    }
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+}
+footer h6{
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 500;
+}
